@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  min-width: 0;
+}
+
+input {
+  color-scheme: dark;
+}
+
+.rdp {
+  --rdp-accent-color: #bef264 !important;
+  --rdp-accent-color-dark: #bef264 !important;
+  --rdp-background-color: #d9f99d;
+  --rdp-background-color-dark: #d9f99d;
+  --rdp-selected-color: #1a2e05;
+}
+
+[data-theme='dark'] .rdp,
+.dark .rdp {
+  --rdp-accent-color: var(--rdp-accent-color-dark);
+  --rdp-background-color: var(--rdp-background-color-dark);
+}
